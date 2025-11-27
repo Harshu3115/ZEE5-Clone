@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .logo {
+            margin-left: 20px;
+            padding: 5px;
+        }
+
+        .logo img {
+            width: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .nav ul {
+            font-size: 20px;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+
+        .nav ul li {
+            margin-left: 20px;
+        }
+
+        .search input {
+            width: 400px;
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            position: relative;
+            top: 10px;
+            left: 50px;
+            background-color: transparent;
+        }
+
+        .btn {
+            background: #8230c6;
+            border: none;
+            border-radius: 8px;
+            width: 130px;
+            padding: 10px 15px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            right: -70px;
+            top: 10px;
+        }
+
+        .slider img {
+            width: 100%;
+            display: block;
+        }
+
+        .more {
+            display: inline-block;
+            position: absolute;
+            right: 105px;
+            bottom: -40px;
+            color: #a785ff;
+        }
+
+        .more1 {
+            display: inline-block;
+            position: relative;
+            bottom: 50px;
+            left: 1275px;
+            color: #a785ff;
+        }
+
+        .more2 {
+            display: inline-block;
+            position: relative;
+            bottom: 50px;
+            left: 1250px;
+            color: #a785ff;
+        }
+
+        .trending,
+        .loved,
+        .marathi-episodes {
+            margin: 40px 80px;
+        }
+
+        .movie-gallery,
+        .episode-gallery {
+            display: flex;
+            gap: 20px;
+        }
+
+        .movie-gallery,
+        .episode-gallery small {
+            display: block;
+            color: grey;
+        }
+
+        .movie-gallery img {
+            border-radius: 5px;
+            width: 200px;
+            margin-left: 20px;
+        }
+
+        .movie-gallery {
+            position: relative;
+            right: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .logo {
+                margin-left: 20px;
+                padding: 5px;
+            }
+
+            .logo img {
+                width: 50px;
+            }
+
+            nav {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .nav ul {
+                font-size: 20px;
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+            }
+
+            .nav ul li {
+                margin-left: 20px;
+            }
+
+            .search input {
+                width: 400px;
+                padding: 10px;
+                border: 1px solid grey;
+                border-radius: 5px;
+                position: relative;
+                top: 10px;
+                left: 50px;
+                background-color: transparent;
+            }
+
+            .btn {
+                background: #8230c6;
+                border: none;
+                border-radius: 8px;
+                width: 130px;
+                color: black;
+                padding: 10px 15px;
+                font-weight: 600;
+                cursor: pointer;
+                position: relative;
+                right: -70px;
+                top: 10px;
+            }
+
+            .slider img {
+                width: 100%;
+                display: block;
+            }
+
+            .more {
+                display: inline-block;
+                position: absolute;
+                right: 105px;
+                bottom: -40px;
+                color: #a785ff;
+            }
+
+            .more1 {
+                display: inline-block;
+                position: relative;
+                bottom: 50px;
+                left: 1275px;
+                color: #a785ff;
+            }
+
+            .more2 {
+                display: inline-block;
+                position: relative;
+                bottom: 50px;
+                left: 1250px;
+                color: #a785ff;
+            }
+
+            .trending,
+            .loved,
+            .marathi-episodes {
+                margin: 40px 80px;
+            }
+
+            .movie-gallery,
+            .episode-gallery {
+                display: flex;
+                gap: 20px;
+            }
+
+            .movie-gallery,
+            .episode-gallery small {
+                display: block;
+                color: grey;
+            }
+
+            .movie-gallery img {
+                border-radius: 5px;
+                width: 200px;
+                margin-left: 20px;
+            }
+
+            .movie-gallery {
+                position: relative;
+                right: 20px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .logo {
+                margin-left: 20px;
+                padding: 5px;
+            }
+
+            .logo img {
+                width: 50px;
+            }
+
+            nav {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .nav ul {
+                font-size: 20px;
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+            }
+
+            .nav ul li {
+                margin-left: 20px;
+            }
+
+            .search input {
+                width: 400px;
+                padding: 10px;
+                border: 1px solid grey;
+                border-radius: 5px;
+                position: relative;
+                top: 10px;
+                left: 50px;
+                background-color: transparent;
+            }
+
+            .btn {
+                background: #8230c6;
+                border: none;
+                border-radius: 8px;
+                width: 130px;
+                padding: 10px 15px;
+                font-weight: 600;
+                cursor: pointer;
+                position: relative;
+                right: -70px;
+                top: 10px;
+            }
+            .buy{
+                
+                color: white;
+            }
+
+            .slider img {
+                width: 100%;
+                display: block;
+            }
+
+            .more {
+                display: inline-block;
+                position: absolute;
+                right: 105px;
+                bottom: -40px;
+                color: #a785ff;
+            }
+
+            .more1 {
+                display: inline-block;
+                position: relative;
+                bottom: 50px;
+                left: 1275px;
+                color: #a785ff;
+            }
+
+            .more2 {
+                display: inline-block;
+                position: relative;
+                bottom: 50px;
+                left: 1250px;
+                color: #a785ff;
+            }
+
+            .trending,
+            .loved,
+            .marathi-episodes {
+                margin: 40px 80px;
+            }
+
+            .movie-gallery,
+            .episode-gallery {
+                display: flex;
+                gap: 20px;
+            }
+
+            .movie-gallery,
+            .episode-gallery small {
+                display: block;
+                color: grey;
+            }
+
+            .movie-gallery img {
+                border-radius: 5px;
+                width: 200px;
+                margin-left: 20px;
+            }
+
+            .movie-gallery {
+                position: relative;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Map</li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search for Movies, Shows, Channels etc.">
+            </div>
+            <div class="user-actions">
+                <i class="fa-solid fa-user user-icon"></i>
+                <button class="btn"><span class="buy">BUY PLAN</span></button>
+                <i class="fa-solid fa-crown crown-icon"></i>
+                <i class="bar fa fa-bars"></i></a>
+            </div>
+        </nav>
+
+        <div class="slider">
+            <img src="1.webp" alt="Slider Image">
+        </div>
+
+        <!-- Trending Section -->
+        <section class="trending">
+            <h2>Trending Near You</h2>
+            <div class="more">
+                <span>More</span>
+                <i class="fa fa-angle-right"></i>
+            </div>
+            <div class="movie-gallery">
+                <img src="m1.webp" alt="Movie 1">
+                <img src="m2.webp" alt="Movie 2">
+                <img src="m3.webp" alt="Movie 3">
+                <img src="m4.webp" alt="Movie 4">
+                <img src="m5.webp" alt="Movie 5">
+                <img src="m6.webp" alt="Movie 6">
+            </div>
+        </section>
+    </header>
+</body>
+
+</html>

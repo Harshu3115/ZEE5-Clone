@@ -1,0 +1,692 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header.nav {
+    background: black;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.nav nav{
+    position: relative;
+    right: 150px;
+    font-weight: 500;
+}
+
+#head {
+    width: 60px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-size: 17px;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    background: none;
+    width: 300px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    margin-right: 10px;
+}
+
+.search-bar .search-icon {
+    color: white;
+    position: relative;
+    right: 40px;
+}
+.bar{
+    position: relative;
+    right: 100px;
+    background: rgba(128, 128, 128, 0.3);
+}
+
+.user-actions .user-icon{
+    background: rgba(128, 128, 128, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+    right: 120px;
+}
+
+.btn {
+    background: #8230c6;
+    border: none;
+    border-radius: 8px;
+    width: 130px;
+    color: white;
+    padding: 10px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    right: 100px;
+    top: -2px;
+}
+.btn .buy{
+    color: white;
+    margin-left: 20px;
+}
+.user-actions .crown-icon{
+    position: relative;
+    right: 220px;
+}
+
+.slider img {
+    width: 100%;
+    display: block;
+}
+.more{
+    display: inline-block;
+    position: absolute;
+    right: 105px;
+    bottom: -40px;
+    color: #a785ff;
+}
+.more1{
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    left: 1275px;
+    color: #a785ff;
+}
+.more2{
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    left: 1250px;
+    color: #a785ff;
+}
+
+.trending, .loved, .marathi-episodes {
+    margin: 40px 80px;
+}
+
+.movie-gallery, .episode-gallery {
+    display: flex;
+    gap: 20px;
+}
+.movie-gallery, .episode-gallery small{
+    display: block;
+    color: grey;
+}
+
+.movie-gallery img{
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 20px;
+}
+.movie-gallery{
+    position: relative;
+    right: 20px;
+}
+.episode img {
+    border-radius: 5px;
+    width: 200px;
+}
+.episode{
+    width: 200px;
+}
+/* Media Queries for Responsiveness */
+
+/* For devices with a max width of 1200px */
+@media (max-width: 1200px) {
+    .search-bar input {
+        width: 250px;
+    }
+
+    .movie-gallery img, .episode img {
+        width: 180px;
+    }
+
+    .btn {
+        width: 100px;
+    }
+
+    .more, .more1, .more2 {
+        left: 1150px;
+    }
+}
+
+/* For tablets (max width of 992px) */
+@media (max-width: 992px) {
+    header.nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    #head {
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    .user-actions {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn {
+        width: 100px;
+        margin: 0;
+    }
+
+    .movie-gallery img, .episode img {
+        width: 160px;
+    }
+
+    .more, .more1, .more2 {
+        left: 950px;
+    }
+
+    .movie-gallery {
+        gap: 15px;
+    }
+}
+
+/* For mobile devices (max width of 768px) */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header ul li a {
+        margin-left: 20px;
+    }
+
+    .user-actions {
+        flex-direction: row;
+        gap: 10px;
+        position: relative;
+        right: 0;
+    }
+
+    .btn {
+        width: 80px;
+        padding: 5px;
+    }
+
+    .movie-gallery img, .episode img {
+        width: 140px;
+    }
+
+    .movie-gallery {
+        gap: 10px;
+    }
+
+    .more, .more1, .more2 {
+        left: auto;
+        position: relative;
+        text-align: right;
+    }
+}
+hr{
+    color: black;
+    position: relative;
+    bottom: 30px;
+}
+.app{
+    position: relative;
+    font-weight: 600;
+    left:90px;
+    font-size: 18px;
+    bottom: 20px;
+}
+.store{
+    position: relative;
+    left: 90px;
+    bottom: 8px;
+}
+.store2{
+    position: relative;
+    left: 100px;
+    bottom: 8px;
+}
+.connect{
+    position: relative;
+    font-weight: 600;
+    left: 645px;
+    font-size: 18px;
+    bottom: 20px;
+}
+.icons{
+    position: relative;
+    bottom: 40px;
+    left: 500px;
+}
+
+.yt{
+    position: relative;
+    left:700px ;
+    bottom: 20px;
+    background: #8080803b;
+    padding: 15px;
+    border-radius: 50%;
+}
+.x{
+    position: relative;
+    left:700px ;
+    bottom: 20px;
+    background: #8080803b;
+    padding: 15px;
+    border-radius: 50%;
+}
+.insta{
+    position: relative;
+    left:700px ;
+    bottom: 20px;
+    background: #8080803b;
+    padding: 15px;
+    border-radius: 50%;
+}
+.fb{
+    position: relative;
+    left:700px ;
+    bottom: 20px;
+    background: #8080803b;
+    padding: 15px;
+    border-radius: 50%;
+}
+ .list ul li{
+    color: grey;
+    position: relative;
+    bottom: 50px;
+    font-size: 15px;
+    margin-left: 50px;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+.list ul li:hover{
+    color: violet;
+    cursor: pointer;
+}
+.l1{
+    position: relative;
+    bottom: 90px;
+    left: 180px;
+    color: grey;
+}
+.l2{
+    position: relative;
+    bottom: 90px;
+    left: 300px;
+    color: grey;
+}
+.l3{
+    position: relative;
+    bottom: 90px;
+    left: 430px;
+    color: grey;
+}
+.l4{
+    position: relative;
+    bottom: 90px;
+    left: 580px;
+    color: grey;
+}
+.l5{
+    position: relative;
+    bottom: 90px;
+    left: 720px;
+    color: grey;
+}
+.l6{
+    position: relative;
+    bottom: 90px;
+    left: 845px;
+    color: grey;
+}
+.shows{
+    position: relative;
+    bottom: 227px;
+    display: inline-block;
+    left: 89px;
+    font-size: 15px;
+}
+.shows2{
+    position: relative;
+    bottom: 60px;
+    left: 85px;
+    font-size: 15px;
+}
+.popular{
+    display: inline-block;
+}
+.popular1{
+    display: inline-block;
+    margin-left: 50px;
+}
+.ul{
+    color: grey;
+    font-size: 13px;
+    position: relative;
+    left: 50px;
+    bottom:213px;
+}
+.ul2{
+    color: grey;
+    font-size: 13px;
+    position: relative;
+    left: 45px;
+    bottom: 50px;
+}
+ul:hover{
+    color: violet;
+    cursor: pointer;
+}
+.popular2{
+    display: inline-block;
+    margin-left: 50px;
+}
+.shows3{
+    position: relative;
+    bottom: 457px;
+    left: 85px;
+    font-size: 15px;
+}
+.ul3{
+    color: grey;
+    font-size: 13px;
+    position: relative;
+    left: 45px;
+    bottom:450px;
+}
+.popular3{
+    display: inline-block;
+    margin-left: 50px;
+}
+.shows4{
+    position: relative;
+    bottom:95px;
+    left: 85px;
+    font-size: 15px;
+}
+.ul4{
+    color: grey;
+    font-size: 13px;
+    position: relative;
+    left: 45px;
+    bottom:90px;
+}
+
+.popular4{
+    display: inline-block;
+    margin-left: 50px;
+}
+.shows5{
+    position: relative;
+    bottom:195px;
+    left: 85px;
+    font-size: 15px;
+}
+.ul5{
+    color: grey;
+    font-size: 13px;
+    position: relative;
+    left: 45px;
+    bottom:190px;
+}
+.popular5{
+    display: inline-block;
+    margin-left: 50px;
+}
+.shows6{
+    position: relative;
+    bottom:260px;
+    left: 85px;
+    font-size: 15px;
+}
+.ul6{
+    color: grey;
+    font-size: 13px;
+    position: relative;
+    left: 45px;
+    bottom:250px;
+}
+.copyright{
+    color: grey;
+    width: 48%;
+    font-size: 12px;
+    margin-left:80px;
+    padding-bottom: 20px;
+}
+
+/* General breakpoints for responsiveness */
+
+/* Extra large devices (desktop, large monitors) with a max width of 1200px */
+@media (max-width: 1200px) {
+    .search-bar input {
+        width: 250px;
+    }
+
+    .movie-gallery img, .episode img {
+        width: 180px;
+    }
+
+    .btn {
+        width: 100px;
+    }
+
+    .more, .more1, .more2 {
+        left: 1150px;
+    }
+}
+
+/* Large devices (laptops) with a max width of 992px */
+@media (max-width: 992px) {
+    header.nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    #head {
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    .user-actions {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn {
+        width: 100px;
+        margin: 0;
+    }
+
+    .movie-gallery img, .episode img {
+        width: 160px;
+    }
+
+    .more, .more1, .more2 {
+        left: 950px;
+    }
+
+    .movie-gallery {
+        gap: 15px;
+    }
+}
+
+/* Medium devices (tablets) with a max width of 768px */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header ul li a {
+        margin-left: 20px;
+    }
+
+    .user-actions {
+        flex-direction: row;
+        gap: 10px;
+        position: relative;
+        right: 0;
+    }
+
+    .btn {
+        width: 80px;
+        padding: 5px;
+    }
+
+    .movie-gallery img, .episode img {
+        width: 140px;
+    }
+
+    .movie-gallery {
+        gap: 10px;
+    }
+
+    .more, .more1, .more2 {
+        left: auto;
+        position: relative;
+        text-align: right;
+    }
+}
+
+/* Small devices (smartphones) with a max width of 576px */
+@media (max-width: 576px) {
+    .nav nav {
+        right: 0;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .movie-gallery img, .episode img {
+        width: 120px;
+    }
+
+    .movie-gallery {
+        flex-wrap: wrap;
+    }
+
+    .trending, .loved, .marathi-episodes {
+        margin: 20px;
+    }
+
+    .episode-gallery {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .more, .more1, .more2 {
+        font-size: 14px;
+    }
+
+    header ul {
+        gap: 10px;
+    }
+
+    .search-bar input {
+        width: 90%;
+    }
+}
+
+/* Extra small devices (very small smartphones) with a max width of 400px */
+@media (max-width: 400px) {
+    .search-bar {
+        width: 100%;
+    }
+
+    .btn {
+        width: 70px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .movie-gallery img, .episode img {
+        width: 100px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    .more, .more1, .more2 {
+        font-size: 12px;
+    }
+
+    .user-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
